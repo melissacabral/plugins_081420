@@ -1,0 +1,42 @@
+/*
+Be really specific with your selectors - this will affect the user's whole website!
+*/
+#high-bar{
+	background-color:dodgerblue;
+	color:white;
+	position:fixed;
+	top:0px;
+	left:0;
+	width:100%;
+	text-align: center;
+	font-weight: bold;
+	padding:.3em;
+}
+.admin-bar #high-bar{
+	top:32px;
+}
+@media screen and (max-width: 782px){
+	.admin-bar #high-bar{
+		top:46px;
+		position: absolute;
+	}
+}
+
+#high-bar .high-button{
+	background-color:white;
+	color:black;
+	border-radius: 3px;
+	display: inline-block;
+	padding:.2em 1em;
+	margin-left:.5em;
+}
+#high-bar .high-dismiss{
+	float:right;
+	color:white;
+	font-size:1.2em;
+	line-height:1.2em;
+	background-color: rgba(255,255,255,.3);
+	border-radius: 100%;
+	width:1.2em;
+	height:1.2em;
+}
