@@ -51,3 +51,19 @@ function mmc_dashboard(){
 	remove_meta_box( 'dashboard_primary', 'dashboard', 'side' );
 	remove_meta_box( 'dashboard_quick_press', 'dashboard', 'side' );
 }
+
+
+//custom dashboard widget
+add_action( 'wp_dashboard_setup', 'mmc_dashboard_add' );
+function mmc_dashboard_add(){
+	global $wp_meta_boxes;
+	wp_add_dashboard_widget( 'dashboard_mmc_help', 'Helpful Resources', 'mmc_dash_help_widget' );
+}
+
+
+//content of the widget
+function mmc_dash_help_widget(){
+	?>
+	<iframe width="350" height="250" src="https://www.youtube.com/embed/x7R2HcTAyjI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<?php
+}
