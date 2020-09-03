@@ -1,0 +1,48 @@
+body{
+	background-image:url('../images/bg.png');
+}
+
+/*Login Logo*/
+.login h1 a{
+	background-image: url( '../images/logo.png' );
+	background-image: none, url( '../images/logo.svg' );
+	background-color: white;
+	border-radius:100%;
+	background-size:65px;
+	width:100px;
+	height:100px;
+	background-position: center center;
+	box-shadow: 2px 2px 4px rgba(0,0,0,.2);
+}
+
+/*submit button*/
+.wp-core-ui input.button-primary{
+	background-color: #612A01;
+	border-color:#612A01;
+	border-radius:0;
+	float:none;
+	display:block;
+	width:100%;
+	margin-top:1em;
+	color:white;
+}
+
+.wp-core-ui .button-primary:hover,
+.wp-core-ui .button-primary:focus{
+	background-color:darkgoldenrod;
+	border-color:darkgoldenrod;
+	outline:none;
+	box-shadow:none;
+}
+ .wp-core-ui .button.button-large{
+ 	font-size:130%;
+ }
+
+.login form .forgetmenot{
+ float:none;
+}
+/*eyeball button*/
+.wp-core-ui .button, .wp-core-ui .button-secondary{
+	color:#612A01;
+}
+
